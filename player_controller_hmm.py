@@ -5,6 +5,9 @@ class PlayerControllerHMMAbstract(PlayerController):
     def __init__(self):
         super().__init__()
         self.__name2id = dict()
+        self.fishes_hmms = None
+        self.fishes_observations = None
+        self.fish_observation = None
 
     def player_loop(self):
         """
